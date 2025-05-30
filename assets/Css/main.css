@@ -1,0 +1,123 @@
+/* Mobile-first layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#index-body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #080806;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#indexLogo {
+  width: 200px;
+}
+
+#index-main {
+  flex: 1;
+}
+
+ul#listaPlaylists {
+  list-style: none;
+  padding: 0;
+}
+
+ul#listaPlaylists li {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+ul#listaPlaylists li:hover {
+  background: #f0f0ff;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+#novaEscalaBtn {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fc7a1da8;
+  color: #fcfcfc;
+  border: 2px solid #fda76a;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#novaEscalaBtn:hover {
+  background-color: #FC7A1D;
+  border: 2px solid white;
+  color: white;
+}
+
+/* Nova Escala */
+
+#nv-escala-body {
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#escalaForm {
+  background: rgba(0, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  & #inputs-default {
+    display: flex;
+    align-items: center;
+  }
+
+  & input {
+    width: 220px;
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    outline: none;
+  }
+
+  & #container-lista-musicas {
+    background-color: #fc7a1d4d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+
+    & #listaMusicas {
+      background: gray;
+      width: 270px;
+      height: 500px;
+    }
+
+  }
+
+}
